@@ -1,0 +1,118 @@
+Delivered-To: dabas1surjeet@gmail.com
+Received: by 2002:a05:6a11:6628:b0:736:9313:9d77 with SMTP id wi40csp1587270pxb;
+        Sun, 9 Aug 2026 02:12:51 -0700 (PDT)
+X-Received: by 2002:a05:6820:c88:b0:6ac:a8ef:9a86 with SMTP id 006d021491bc7-6ae96cf7403mr18863221eaf.15.1786266771113;
+        Sun, 09 Aug 2026 02:12:51 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1786266771; cv=pass;
+        d=google.com; s=arc-20260327;
+        b=TIgoXSN4achbrQRzR+GTZibcBx7+opDWy3ASe3AyowYPFc8apKPyKHZTFrLqqx02ew
+         SgL22nao4xFkFBl/Nr493PLBWpNDbB9bjk2e4OetPgUEOEIaUQ6dxO/dXfPf5KkQgyuM
+         5kBrAzhvGHWFGuIVCZrSzfBGIemOe3GvG9ll38j1r+5URc8qAgxWEOcjLc5HutmAKzxo
+         OAj0lZDzh8pvWfLdNEwg7g3LZ5LWFmDl+5Oq7H0ZRxJhwasv0dIbzrUvoPr/6kdXu4xx
+         CLuXsznGdGUUlBo+W7vqwOVsV2jZwAmEphxFNAyhhS7u0Vf1krJqsfzXo5Aa/+MJeW+Q
+         MV1A==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20260327;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=ChsQcmR54hDErLlFRfZ8KzP82MfwWqzye4wu0lLGp/Q=;
+        fh=x6OrahOEXCcO++qoeukvsv9gyqLKzCarpf01NDJKNnM=;
+        b=GuEgZ9ZVtJjwKgE3B17gsfc8dSmG0SQLue9ZQiYwqhYGOgizk8fu0oZu4+MecSeoFc
+         VCgIRbrr45y7Msz4ldNlF4d6yMMQHde5aXBz/54mKPOAfICOcDHCsoO4xacEfmuFrXro
+         cs4In70gpx4biPFpZRkEaVfT/EvmiYbzyrMYNQJz59zTklV/tJ3JzLJrxXbgjhn9Ezkd
+         Rm2ZAnHMpEKIxXLyqZ9ffTBgs6h+3g9xhjY26a5mUeNRZ9eVcJHl36VNQSQV8v87Yct6
+         gg2a6ndxKUYabrw/AAK45/wGt6GPAyD99ATEY3sku4oaRl6ASkhz+er86rWZRBmLDviW
+         p8VA==;
+        dara=google.com
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20251104 header.b=kK1SVy5O;
+       arc=pass (i=1);
+       spf=pass (google.com: domain of lavanayadabas09@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=lavanayadabas09@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <lavanayadabas09@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 586e51a60fabf-459f1ade464sor3065794fac.8.2026.08.09.02.12.50
+        for <dabas1surjeet@gmail.com>
+        (Google Transport Security);
+        Sun, 09 Aug 2026 02:12:51 -0700 (PDT)
+Received-SPF: pass (google.com: domain of lavanayadabas09@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20251104 header.b=kK1SVy5O;
+       arc=pass (i=1);
+       spf=pass (google.com: domain of lavanayadabas09@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=lavanayadabas09@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+ARC-Seal: i=1; a=rsa-sha256; t=1786266770; cv=none;
+        d=google.com; s=arc-20260327;
+        b=PKv4pVHHSV8zGD2+F9aEuKTjv9RTGa2AzVIHDuTw+hlxfKhbmgaBbj67Wzn4c/S6sw
+         2KYrRAOkPsf8zVGxZ/lStZblOojNnfo+az2EdKIsuZ9T3YjYb7zCZofT7//MtJq2EPSj
+         VHG+bB4qritslSboKmcOQ2EV2GgeHEUqwKGlyUOl3ed0IDhYcYRp9Q7c5vFixB4H0L/e
+         PcBosdVbLd4Zi3z/QQFHXE5p09Nxe+rF0tenqClhbV9Vq3/LegPVM83tJRRFbqchgK+z
+         Ir19j/aVJGkOesxo1T5PH3f627RFnblhdirnPj+qVZuJfbTdmaL0F+KQpitt7Cs7l/T3
+         BTaQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20260327;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=ChsQcmR54hDErLlFRfZ8KzP82MfwWqzye4wu0lLGp/Q=;
+        fh=x6OrahOEXCcO++qoeukvsv9gyqLKzCarpf01NDJKNnM=;
+        b=XhMg1wbGJoejThCFA2KAdczQNPwUDxJJGH7xoOjpzQRo0rXzUm9vwwxlXswh4Gqg3o
+         VhhXPR/fFskZFC7AXL5i5d/hHT8oPK4n98GkXCCycjIEuJ92/x812ygdpqLkkI0jliVK
+         Dufe//sMC4tjktbB7CTIsRAPafgpH1s3VVRNpivOB0aAYd+L4s4XfUtgSV+HX5Imaqr0
+         oD7iE3CMC+hqqb+ibmynmU6+d8gxS5qiE+0sEqGtlfqGScEtg2A/zi+A6aR77SX8piZJ
+         PHI4K68hE7hNOspIL2MGUYmUicLFjDK9Bfrbt6HMpzcXXM9kkqlx7ljLpWO8/fOyVlLd
+         0+hg==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20251104; t=1786266770; x=1786871570; dara=google.com;
+        h=content-type:to:subject:message-id:date:from:mime-version:from:to
+         :cc:subject:date:message-id:reply-to:content-type;
+        bh=ChsQcmR54hDErLlFRfZ8KzP82MfwWqzye4wu0lLGp/Q=;
+        b=kK1SVy5OXQr0Ic50G9HTYVNaI0/FEP4patlHysPNiI+BrcdpXOxeIAlF5m4t4tFIqZ
+         o1XLXj2RHC7DZ8Z0lHTGv8upP4sEpdXc6eIWXug8gDu/yri3R9R1gKHzqVPe3+3Rkohg
+         BEf2OkRPOQzQhl7oYUef7+/Ifbkq/Wew/nKTx9xG46m/XVDB/7GfRn9YRjmO0zdtkK9H
+         gBJ24wTlVKTpuVNZ0c8KjToJGzd5OwmfLAtGQX6OUiv8ytJRe6kuJuPGZ78pwQEjAa4S
+         WJM9Qp+AoIUOerMMxLDLV7Mzr9zX3CWI62HuXYy7SFOBZsdnr81lZx/7yT6N6YHnAhz7
+         WeXw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20251104; t=1786266770; x=1786871570;
+        h=content-type:to:subject:message-id:date:from:mime-version:x-gm-gg
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to
+         :content-type;
+        bh=ChsQcmR54hDErLlFRfZ8KzP82MfwWqzye4wu0lLGp/Q=;
+        b=srgl4RCKdtSb6IXIokVLICWgr6pBnrSErBRUnC7c1Eh5eTSIChpeRdLdXxizz/wTXP
+         j9JSTqwlcocl6cRxYRFUs0TDnKRNr1iepmQBP9mFC8a9yOgu+tlb2imeR+gfrIP7EGbq
+         wO31+B4bs43jhLUpuc6w7O6zsMQNdl/KYb7L70UipS45RfByEr+CItlDvGMiBpERisbU
+         f01wJiV6QqM1n7tjnoWycZYuwBglUVCHJukgvJ8LyLGb8l61LVM+txBZ82FTRHbNMQo6
+         W6hcMekLa99b/GdzeXvFauFNB5O/9F3AmGYKrVq7r5uE5pZyry0lsnmswTfQyKoFx25l
+         kEWA==
+X-Gm-Message-State: AOJu0YyH5IoSSsxbjqQsOtxDBhV0XFKXg8TVJ6DWeQ8ypN4gO4OUWTzE
+	OTL0tqqITQyFTKEAXU2DpjAbRfmttUT0If8z3RFvee3VDDzVwq90rOtpHn467cfFXqNTh4bHI1h
+	TLxQa2k48drN8dvhMaDScu/LL1z3MWkzQrg==
+X-Gm-Gg: AR+sD10EVrV7PfiEXqz0UpHTG4f4bmtMSfdW+7PP/JedJ+FB9IIoWs43QmYFjLanlID
+	QXQ01U3Kvi+JTgplqFEpuBHkSp3OS+SxbVam4YLVkpJALv0mObWR7FyC7yfWSAgXJ2Epn9EUEPM
+	G+DHtUGbPkXRnlMh8B5CKGrzwq4uSJ3D8a9GnfmlKMH6I5oBkP9/JI1U/kdil3W9yYutG2skzr4
+	aiAeIMDBOTnPmFwGvYNLao+Ipkh0MUgDceSCzXuhdYks0Afqxqxcb32RymzO8ydCRZblslNIyJu
+	ICgIPyCVdGRuIFfOirjYwzTrAsY/C8BpH4mQ06IBHqbXKD0KXFGR4Z+k3ZMhTRBfx1DU298H61i
+	p
+X-Received: by 2002:a05:6808:309d:b0:485:48da:133d with SMTP id
+ 5614622812f47-4afae0d8524mr22583524b6e.10.1786266770587; Sun, 09 Aug 2026
+ 02:12:50 -0700 (PDT)
+MIME-Version: 1.0
+From: Lavanaya <lavanayadabas09@gmail.com>
+Date: Sun, 9 Aug 2026 14:42:36 +0530
+X-Gm-Features: AUfX_mxkf2UXx9QE0n3_M0JOR6gwf44Iu8CLZCeX_xET87XG70Ys6WIw-Ibp8pQ
+Message-ID: <CAAGrn9vCr41qLdy+M4QUV6muTs5eq6VDc3DKfZDihZ8CCVAkJA@mail.gmail.com>
+Subject: customer-inquiry-ai-email-automation-sanitized.blueprint
+To: ROCK GAMER <dabas1surjeet@gmail.com>
+Content-Type: multipart/alternative; boundary="00000000000055c29e065899a4c7"
+
+--00000000000055c29e065899a4c7
+Content-Type: text/plain; charset="UTF-8"
+
+
+
+--00000000000055c29e065899a4c7
+Content-Type: text/html; charset="UTF-8"
+
+
+
+--00000000000055c29e065899a4c7--
